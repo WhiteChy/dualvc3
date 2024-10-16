@@ -5,6 +5,9 @@ replicate
 
 2、hifigan causal training [link](https://github.com/jik876/hifi-gan)
 
+    y = torch.nn.functional.pad(y.unsqueeze(1), (int((n_fft-hop_size)), 0), mode='reflect')
+
+
 3、hpc loss ([apc](https://github.com/iamyuanchung/Autoregressive-Predictive-Coding) and [cpc](https://github.com/Spijkervet/contrastive-predictive-coding))
 
 4、wav2vec2.0 cross entropy loss
