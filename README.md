@@ -25,3 +25,5 @@ F.gumbel_softmax(x,t=1,hard=True)
 8、wavaugment augmentation [wavaugment](https://github.com/facebookresearch/WavAugment)
 
 9、llama and decoder combination **ing**
+
+10、use one future block for training **to do**
