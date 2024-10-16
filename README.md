@@ -1,7 +1,7 @@
 # dualvc3
 replicate
 
-1、content encoder (Dynamic Chunk Training) wenet conformerencoder [link]([https://github.com/jik876/hifi-gan](https://github.com/wenet-e2e/wenet/blob/main/wenet/transformer/encoder.py#L440))
+1、content encoder (Dynamic Chunk Training)  [wenet ConformerEncoder](https://github.com/wenet-e2e/wenet/blob/main/wenet/transformer/encoder.py#L440)
 
 2、hifigan causal training [link](https://github.com/jik876/hifi-gan)
 
