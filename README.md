@@ -1,4 +1,4 @@
-# dualvc3
+![image](https://github.com/user-attachments/assets/f330bdb6-05c7-4942-8e8f-4d3f39a8684d)# dualvc3
 replicate
 
 1、content encoder (Dynamic Chunk Training)  [wenet ConformerEncoder](https://github.com/wenet-e2e/wenet/blob/main/wenet/transformer/encoder.py#L440)
@@ -27,3 +27,7 @@ F.gumbel_softmax(x,t=1,hard=True)
 9、llama and decoder combination **ing**
 
 10、use one future block for training **to do**
+
+### results:
+My replicated DualVC3 (stand-alone mode) have 20.164M params in inference, which is twice than 10.9M (paper).
+
