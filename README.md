@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f330bdb6-05c7-4942-8e8f-4d3f39a8684d)# dualvc3
+# dualvc3
 replicate
 
 1、content encoder (Dynamic Chunk Training)  [wenet ConformerEncoder](https://github.com/wenet-e2e/wenet/blob/main/wenet/transformer/encoder.py#L440)
