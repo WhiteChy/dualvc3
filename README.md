@@ -29,5 +29,5 @@ F.gumbel_softmax(x,t=1,hard=True)
 10、use one future block for training **to do**
 
 ### results:
-My replicated DualVC3 (stand-alone mode) have 20.164M params in inference, which is twice than 10.9M (paper).
-
+My replicated DualVC3 (stand-alone mode) have 20.164M params in inference without 1 chunk lookahead, which is twice than 10.9M (paper).
+But it's performance is better than streamvc (1.7M params & 2 frame look ahead).
