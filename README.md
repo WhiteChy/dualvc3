@@ -7,7 +7,6 @@ replicate
 
     y = torch.nn.functional.pad(y.unsqueeze(1), (int((n_fft-hop_size)), 0), mode='reflect')
 
-
 3、hpc loss ([apc](https://github.com/iamyuanchung/Autoregressive-Predictive-Coding) and [cpc](https://github.com/Spijkervet/contrastive-predictive-coding))
 
 4、wav2vec2.0 cross entropy loss
@@ -29,5 +28,5 @@ F.gumbel_softmax(x,t=1,hard=True)
 10、use one future block for training **to do**
 
 ### results:
-My replicated DualVC3 (stand-alone mode) have 20.164M params in inference without 1 chunk lookahead, which is twice than 10.9M (paper).
-But it's performance is better than streamvc (1.7M params & 2 frame look ahead).
+My replicated DualVC3 (stand-alone mode) have 34.312M params in inference without 1 chunk lookahead, which is twice than 10.9M (paper).
+But it's performance is better than streamvc (18.5M params & 2 frame look ahead).
