@@ -15,9 +15,9 @@ I refer to [link](https://github.com/facebookresearch/fairseq/tree/main/examples
 
 5、gumbel softmax 
 
-F.gumbel_softmax(x,t=1,hard=True)
+F.gumbel_softmax(x,t=1,hard=False)
 
-6、llama training [llama](https://github.com/ypeleg/llama)
+6、llama training [llama](https://github.com/ypeleg/llama) **ing**
 
 7、use pretrained speaker encoder [wespeaker](https://github.com/wenet-e2e/wespeaker)
 
@@ -25,7 +25,11 @@ F.gumbel_softmax(x,t=1,hard=True)
 
 9、llama and decoder combination **ing**
 
-10、use one future block for training **to do**
+10、use one future block for training **to do**             
+
+G_x = G_x[..., hps.train.SAMPLES_PER_FRAME * hps.train.FUTURE_FRAMES:].unsqueeze(1)
+
+x = x[..., :G_x.shape[-1]].unsqueeze(1)
 
 ### results:
 My replicated DualVC3 (stand-alone mode) have 34.312M params in inference without 1 chunk lookahead, which is twice than 10.9M (paper).
